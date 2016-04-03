@@ -1,5 +1,5 @@
 # C sharp
-[in progress] 2 presentations processed
+[in progress] 3 presentations processed
 
 This cheatsheet constains most important parts from [Programming in C# Jump Start](https://mva.microsoft.com/en-US/training-courses/programming-in-c-jump-start-14254).
 I have experience with C++/Java, etc. so here will be only new parts for me. I will try to don't put here evident parts. Struct of this document will be changed on-the-fly.
@@ -15,8 +15,16 @@ Word *CLASSIC* - it has same behavior as in C++/Java.
 ```
 
 
+# Regular expressions
+```C#
+var pattern = @"\b\w+\b";
+var matches = Regex.Matches(source, pattern);
+var value = matches[1].Value;
+```
 
-
+# String
+Immutable.
+Use **Stringbuilder** for building.
 # Class
 
 ## Struct
@@ -30,6 +38,16 @@ public Class() :base(name) {}
 
 Can be overriden. Non virtual be overriden too. But we need right cast to call them.
 
+## Casting
+```C#
+a is object; // same like java 'instanceof'
+```
+
+```C#
+Dog a;
+Cat b = a as Cat; // will be null, because cannot cast dog as cat
+Cat c = (Cat)a; // throw exception
+```
 ## Inheritance
 
 simple
@@ -87,3 +105,21 @@ public void Process() {
 	}
 }
 ```
+
+# Flow
+## Foreach
+```C#
+var strings = new[] { "a", "b" };
+foreach (var s in strings) {
+	Console.WriteLine(s);
+}
+```
+## GOTO
+*CLASSIC*
+
+# Variables
+```C#
+var a = 5; // like C++ auto a = 5;
+```
+
+# Reflexion
