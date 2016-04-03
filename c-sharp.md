@@ -4,7 +4,7 @@
 This cheatsheet constains most important parts from [Programming in C# Jump Start](https://mva.microsoft.com/en-US/training-courses/programming-in-c-jump-start-14254).
 I have experience with C++/Java, etc. so here will be only new parts for me. I will try to don't put here evident parts. Struct of this document will be changed on-the-fly.
 
-Word CLASSIC - it has same behavior as in C++/Java.
+Word *CLASSIC* - it has same behavior as in C++/Java.
 
 # Comments
 
@@ -34,22 +34,22 @@ Can be overriden. Non virtual be overriden too. But we need right cast to call t
 
 simple
 
-+ static
-	- CLASSIC
-+ abstract
-	- CLASSIC
-+ sealed
-	- like java final keyword
++ **static**
+	- *CLASSIC*
++ **abstract**
+	- *CLASSIC*
++ **sealed**
+	- like java *final* keyword
 	
 ## Visibility
 
-+ public
++ **public**
 	- visible from any assembly
-+ private
-	- CLASSIC
-+ protected
-	- CLASSIC
-+ internal
++ **private**
+	- *CLASSIC*
++ **protected**
+	- *CLASSIC*
++ **internal**
 	- visible from same assembly
 
 ## Named arguments
