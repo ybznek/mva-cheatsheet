@@ -123,3 +123,35 @@ var a = 5; // like C++ auto a = 5;
 ```
 
 # Reflexion
+## Types
+```C#
+Type t1 = typeof(Dog); // compile time
+
+Type t2 = dog.GetType();  // runtime
+
+t2.Assembly
+```C#
+## Instance
+```C#
+var newDow = (Dog)Activator.CreateInstance(typeof(Dog));
+
+var genericDog = Activator.CreateInstance<Dog>();
+
+var constr = typeof(Dog).GetConstructors()[];
+
+var d = (Dog)constr.Invoke(null);
+```
+## Property
+```C#
+var horse = new Animal() { Name = "Ed"; };
+var type = horse.getType();
+var property = type.GetProperty("Name");
+var value = property.GetValue(horse, null);
+```
+## Method
+```C#
+var horse = new Animal();
+var type = horse.getType();
+var method = type.GetMethod("Speak");
+var value = (string)method.Invoke(horse, null);
+```
